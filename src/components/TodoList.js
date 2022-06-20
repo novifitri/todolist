@@ -1,6 +1,10 @@
 import React from 'react';
 
 function TodoList(props) {
+    const handleEdit =(id)=>{
+        props.handleEdit(id)
+    }
+
     return (
         <div >
             <h2 className='font-bold text-xl text-center lg:text-left mt-4'>List Todo</h2>
@@ -12,8 +16,10 @@ function TodoList(props) {
                         <p>{todo.date}</p>
                     </div>
                     <div className='flex flex-col justify-between'>
-                    <button className='rounded-xl px-[20px] py-[5px] my-1 bg-yellow-300 hover:bg-yellow-400'>Edit</button>
-                        <button className='rounded-xl px-[20px] py-[5px] my-1 bg-red-500 hover:bg-red-600' >Delete</button>
+                    <button onClick={()=> {handleEdit(todo.id)}}
+                    className='rounded-xl px-[20px] py-[5px] my-1 bg-yellow-300 hover:bg-yellow-400'>Edit</button>
+                    <button onClick={()=> {props.handleDelete(todo.id)}}
+                    className='rounded-xl px-[20px] py-[5px] my-1 bg-red-500 hover:bg-red-600' >Delete</button>
                     </div>
                     </div>
                  )  

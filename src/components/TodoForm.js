@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function TodoForm(props) {
     const [name, setName] = useState('');
     const [date, setDate] = useState('');
+  
     const handleSubmit = (e) => {
         e.preventDefault();
         const newTodo = {
@@ -14,6 +15,7 @@ function TodoForm(props) {
         setName('')
         setDate('')
     }
+    
     return (
         <div >
            <div className='w-full mt-4 bg-rose-400 h-32 flex rounded-t-lg items-center justify-center'>
