@@ -2,20 +2,19 @@
 
 Project sederhana membuat todolist dengan belajar menggunakan React.js untuk sisi SPA dan desain tampilan dengan tailwindcss. Memang sesungguhnya program sederhana ini bisa dibuat dengan menggunakan vanilla js namun saya hanya ingin memperdalam materi tentang library react dan juga framework css selain bootstrap. Untuk itu segala kritik dan saran sangat saya harapkan untuk membantu perkembangan saya.
 
-note: 'masih dalam tahap pengembangan'
 ### Berikut langkah - langkah nya
 
 1. Buat project react <br>
 npx create-react-app nama-app <br><em>kemudian cd ke project nya</em>
 
 2. Menjalankan project react <br>
-npm start
+**npm start**
 
 3. Pasang tailwindcss ke react project <br>
-npm install -D tailwindcss postcss autoprefixer
+**npm install -D tailwindcss postcss autoprefixer**
 
 4. Generate file tailwindcss confignya <br>
-npx tailwindcss init -p
+**npx tailwindcss init -p**
 
 5. Buka tailwindcss.config.js kemudian copas :  <br>
 module.exports = { <br>
@@ -33,7 +32,7 @@ module.exports = { <br>
 @tailwind components; <br>
 @tailwind utilities; <br>
 
-7. kemudian build : npm run start
+7. kemudian build : **npm run start**
 
 8. selanjutnya utility classes tailwind sudah bisa digunakan di jsx
 
